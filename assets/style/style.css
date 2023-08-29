@@ -1,59 +1,58 @@
 /*
-Logo de la empresa
-margen superior
-altura y ancho
+Logo de la empresa:
+- Altura y ancho del logo
+- Margen superior para el logo
+- Borde redondeado del logo
 */
-
-.logo{
-    margin-top: 30px;
-    height: 100px;
-    width: 170px;
+.logo {
+    height: 80px;
+    width: 150px;
+    margin-bottom: -20px;
+    border-radius: 25px;
 }
 
 /*
-Menú de navegacion y lista
-display (vista en horizontal),
-ancho
-relleno
-alineacion del texto
-bordes redondeados
-tamaño de fuente
+Menú de navegación y lista:
+- Estilo de visualización horizontal
+- Ancho de los elementos de lista
+- Relleno de los elementos de lista
+- Alineación del texto en los elementos de lista
+- Bordes redondeados en los elementos de lista
+- Tamaño de fuente en los elementos de lista
+- Fuente y peso de fuente en los elementos de lista
 */
-
-nav li{
-    display:inline-block;
-    width:10%;
-    padding:6px 10px;
-    text-align:center;
+nav li {
+    display: inline-block;
+    width: 12%;
+    text-align: center;
     border-radius: 15px;
-    font-size:18px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 /*
-Formato de hipervinculo (utilizado en menu y botones)
-sin formato de enlace
-color predeterminado
+Formato de hipervínculo (utilizado en menú y botones):
+- Elimina el subrayado predeterminado
+- Color de texto predeterminado
 */
-
-a{
+a {
     text-decoration: none;
-    color:#3A3636;
+    color: #3A3636;
 }
 
 /*
 Secciones:
-La seccion principal y secundaria tienen el mismo formato, su diferencia es el color
-
-Principal y Secundario
-Altura, 
-relleno izquierdo, abajo y arriba, 
-margen, 
-color de fondo rosa y celeste, 
-tamaño de texto
+- Estilo de las secciones principal y secundaria
+- Diferencia en el color de fondo
+- Altura
+- Relleno izquierdo, superior y inferior
+- Margen y espacio entre las secciones
+- Tamaño de texto en las secciones
+- Color de texto en las secciones
 */
-
-.divPrincipal{
-    height: 500px;
+.divPrincipal {
+    height: 620px;
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -63,7 +62,7 @@ tamaño de texto
     color: #3A3636;
 }
 
-.divSecundario{
+.divSecundario {
     height: 500px;
     padding-left: 50px;
     padding-top: 20px;
@@ -74,31 +73,65 @@ tamaño de texto
     color: #3A3636;
 }
 
-/*
-Titulo Principal
-tipo de fuente
-margen inferior
-tamaño de fuente
-*/
+/* Formato para la sección de Doctores */
+.divDoctores {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #D5F7FF;
+    color: #3A3636;
+    margin-bottom: 30px;
+    /* Centrar todo incluyendo la tabla */
+    display: grid;
+    place-items: center;
+}
 
-.h1Principal{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*
+Barra de menú:
+- Posición fija
+- Ancho completo
+- Color de fondo
+- Altura
+- Margen izquierdo
+*/
+.divMenu {
+    position: fixed;
+    width: 100%;
+    background-color: antiquewhite;
+    height: 130px;
+    margin-left: -10px;
+}
+
+/*
+Títulos Principal y Secundario:
+- Tipo de fuente
+- Margen inferior
+- Tamaño de fuente
+*/
+.h1Principal {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 10px;
     font-size: 80px;
 }
 
-/*
-Formato de botones
-Color de fondo
-borde desactivado
-margen interior
-bordes redondeados
-fuente en negrita
-margen superior
-tamalño de fuente
-*/
+.h2Secundario {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+}
 
-button{
+/*
+Formato de botones:
+- Color de fondo
+- Borde desactivado
+- Margen interior
+- Bordes redondeados
+- Fuente en negrita
+- Margen superior
+- Tamaño de fuente
+*/
+button {
     background-color: #1DD2FF;
     border: none;
     padding: 18px 30px 18px 30px;
@@ -109,17 +142,15 @@ button{
 }
 
 /*
-Imagenes:
-La imagen principal y secundaria tienen el mismo formato, su diferencia es la orientación (izquierda / derecha)
-
-Principal y Secundaria
-Altura, ancho
-borde redondeado
-alineación derecha / izquierda
-margen exterior derecho e izquierdo
+Imágenes:
+- Estilo de las imágenes principal y secundaria
+- Diferencia en la orientación (izquierda / derecha)
+- Altura y ancho de las imágenes
+- Borde redondeado de las imágenes
+- Alineación a la derecha o izquierda de las imágenes
+- Margen exterior derecho e izquierdo de las imágenes
 */
-
-.imgPrincipal{
+.imgPrincipal {
     height: 400px;
     width: 350px;
     border-radius: 25px;
@@ -128,7 +159,7 @@ margen exterior derecho e izquierdo
     margin-left: 50px;
 }
 
-.imgSecundaria{
+.imgSecundaria {
     height: 400px;
     width: 350px;
     border-radius: 25px;
@@ -136,3 +167,28 @@ margen exterior derecho e izquierdo
     margin-right: 50px;
     margin-left: 50px;
 }
+
+/* Imágenes para la sección de Doctores */
+.imgDocs {
+    height: 300px;
+    width: 200px;
+    border-radius: 45px;
+    margin: 20px;
+}
+
+/* Nombre del Doctor en la sección de Doctores */
+.nomDoc {
+    text-align: center;
+    font-size: 22px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

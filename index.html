@@ -7,30 +7,35 @@
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="icon" href="./assets/icons/icono.ico" type="image/x-icon">
 </head>
-<body style="background-color:#D5F7FF;">
+<body style="background-color:#D5F7FF; overflow-x: hidden;">
 
 
     <!--Barra de navegacion-->
-    <nav>
-        <!--Logo de empresa-->
-        <center>
-            <img src="./assets/img/logo.jpg" class="logo">
-        </center>
-        <ul>
-            <li><a href="https://www.imagendental.com/" target="_blank">Servicios</a></li>
-            <a><a href="https://www.imagendental.com/" target="_blank">Ubicaciones</a></li>
-            <li><a href="https://www.imagendental.com/" target="_blank">Seguro</a></li>
-            <li><a href="https://www.imagendental.com/" target="_blank">Acerca de</a></li>
-            <li><a href="https://www.imagendental.com/" target="_blank">Contacto</a></li>
-            <li><a href="https://www.imagendental.com/" target="_blank">81-1212-2121</a></li>
-            <!--Boton valoracion-->
-            <li><a href="https://www.imagendental.com" target="_blank"><button>Programar valoración</button></a></li>
-        </ul>
-    </nav>
+    <div class="divMenu">
+        <nav>
+            <ul>
+                <!--Logo de empresa-->
+                <img src="./assets/img/logo.jpg" class="logo">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ubicaciones">Ubicaciones</a></li>
+                <li><a href="#acercade">Acerca de</a></li>
+                <li><a href="#equipo">Nuestro Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="tel:8112122121">81-1212-2121</a></li>
+                <!--Boton valoracion-->
+                <li><a href="./agendar.html" target="_blank"><button>Programar valoración</button></a></li>
+            </ul>
+        </nav>
+    </div>
 
 
     <!--Primera seccion, seccion principal-->
     <div class="divPrincipal">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <img src="./assets/img/sloganImg.gif" class="imgPrincipal">
         <h1 class="h1Principal">La Vida es Mejor Cuando Sonríes :)</h1>
         <p>
@@ -40,6 +45,7 @@
             experimentado se dedica a brindar atención dental de la más alta calidad.
         </p>
         <a href="https://www.imagendental.com" target="_blank"><button>Programar valoración</button></a>
+        <a name="servicios"></a>
     </div>
 
 
@@ -58,6 +64,7 @@
             <li>Invisalign</li>
         </ul>
         <a href="https://www.imagendental.com" target="_blank"><button>Más información</button></a>
+        <a name="ubicaciones"></a>
     </div>
 
 
@@ -67,11 +74,9 @@
         <h2>Contamos con dos ubicaciones en CDMX</h2>
         <p>Nuestras ubicaciones están convenientemente ubicadas para que pueda entrar y salir rápidamente</p>
         <a href="https://www.imagendental.com" target="_blank"><button>Ver ubicaciones</button></a>
+        <a name="acercade"></a>
     </div>
-    <div>
-        <!--SECCION DE IMAGENES-->
-    </div>
-
+  
 
     <!--Seccion Recomendacion tienda-->
     <div class="divSecundario">
@@ -83,28 +88,71 @@
             <li>Calidad-precio</li>
         </ul>
         <a href="https://www.imagendental.com" target="_blank"><button>Más información</button></a>
+        <a name="equipo"></a>
     </div>
 
 
-    <!--Doctores-->
-    <div class="divSecundario">
-        <img src="./assets/img/dental3.jpg" class="imgPrincipal">
-        <h2>Nuestros dentistas aman su profesión y son altamente confiables, reputación 10/10</h2>
-        <!--IMAGENES Y NOMBRES DE DENTISTAS-->
-        <a href="https://www.imagendental.com" target="_blank"><button>Conoce nuestro equipo</button></a>
-    </div>
+  <!--Doctores-->
+<div class="divDoctores">
+    <h2 class="h2Secundario">Nuestros dentistas aman su profesión y son altamente confiables <br>reputación 10/10</h2>
+    <table> 
+        <tr>
+            <td>
+                <img src="./assets/img/Personal/mauricioVillegas.jpeg" class="imgDocs"></img>
+                <p class="nomDoc">Dr. Mauricio Villegas</p>
+            </td>
+            <td class="imagen-container">
+                <img src="./assets/img/Personal/juanValdez.jpg" class="imgDocs"></img>
+                <p class="nomDoc">Dr. Juan Valdez</p>
+            </td>
+            <td>
+                <img src="./assets/img/Personal/oscarRivas.jpg" class="imgDocs"></img>
+                <p class="nomDoc">Dr. Oscar Rivas</p>
+            </td>
+            <td>
+                <img src="./assets/img/Personal/joseRodriguez.jpg" class="imgDocs"></img>
+                <p class="nomDoc">Dr. Jose Rodriguez</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./assets/img/Personal/jonathanOchoa.jpg" class="imgDocs"></img>
+                <p class="nomDoc">Dr. Jonathan Ochoa</p>
+            </td>
+            <td class="imagen-container">
+                <img src="./assets/img/Personal/manuelMartinez.jpeg" class="imgDocs"></img>
+                <p class="nomDoc">Dr. Manuel Martinez</p>
+            </td>
+            <td>
+                <img src="./assets/img/Personal/mariaReyes.jpg" class="imgDocs"></img>
+                <p class="nomDoc">Dra. Maria Reyes</p>
+            </td>
+            <td>
+                <img src="./assets/img/Personal/sandraCarrizales.jpg" class="imgDocs"></img>
+                <p class="nomDoc">Dra. Sandra Carrizales</p>
+            </td>
+        </tr>
+    </table>
+    <p>
+        <a href="https://www.imagendental.com" target="_blank"><button>Conoce nuestro equipo</button></a> 
+    </p>
+</div>
+
 
 
     <!--Reseñas-->
     <div class="divSecundario">
+        <a name="contacto"></a>
         <img src="./assets/img/dental4.jpg" class="imgSecundaria">
-        <h2>Tus dientes están en buenas manos</h2>
-        <p>0 reseñas de 5 estrellas y contando....:)</p>
+        <h2>Tus dientes están en buenas manos ¡Contáctanos!</h2>
+        <p>Horario de Atención:</p>
         <ul>
-            <li>Opinion 1</li>
-            <li>Opinion 2</li>
-            <li>Opinion 3</li>
+            <li>Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+            <li>Sábados: 9:00 AM - 2:00 PM</li>
         </ul>
+        <p>Comunicate con nosotros a través de: </p>
+        <a href="https://wa.me/qr/5JHAHKFE2HG4B1" target="_blank"><button>WhatsApp</button></a>
+        <a href="mailto:antonio1959988@gmail.com"><button>Correo Electrónico</button></a>
     </div>
 </body>
 </html>
