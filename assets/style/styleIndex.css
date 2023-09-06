@@ -1,3 +1,7 @@
+body{
+    background-color: #265A73;
+}
+
 /*
 Logo de la empresa:
 - Altura y ancho del logo
@@ -21,7 +25,7 @@ Menú de navegación y lista:
 - Tamaño de fuente en los elementos de lista
 - Fuente y peso de fuente en los elementos de lista
 */
-nav li {
+.divMenu li {
     display: inline-block;
     width: 12%;
     text-align: center;
@@ -38,52 +42,7 @@ Formato de hipervínculo (utilizado en menú y botones):
 */
 a {
     text-decoration: none;
-    color: #3A3636;
-}
-
-/*
-Secciones:
-- Estilo de las secciones principal y secundaria
-- Diferencia en el color de fondo
-- Altura
-- Relleno izquierdo, superior y inferior
-- Margen y espacio entre las secciones
-- Tamaño de texto en las secciones
-- Color de texto en las secciones
-*/
-.divPrincipal {
-    height: 620px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: -10px;
-    background-color: antiquewhite;
-    font-size: 22px;
-    color: #3A3636;
-}
-
-.divSecundario {
-    height: 500px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: -10px;
-    background-color: #D5F7FF;
-    font-size: 22px;
-    color: #3A3636;
-}
-
-/* Formato para la sección de Doctores */
-.divDoctores {
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: #D5F7FF;
-    color: #3A3636;
-    margin-bottom: 30px;
-    /* Centrar todo incluyendo la tabla */
-    display: grid;
-    place-items: center;
+    color: white;
 }
 
 /*
@@ -95,28 +54,76 @@ Barra de menú:
 - Margen izquierdo
 */
 .divMenu {
-    position: fixed;
     width: 100%;
-    background-color: antiquewhite;
-    height: 130px;
-    margin-left: -10px;
+    background-color: #265A73;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+
 /*
-Títulos Principal y Secundario:
-- Tipo de fuente
-- Margen inferior
-- Tamaño de fuente
+Secciones CONTAINERS, con margen interior, color de fondo, tamaño de fuente y color de fuente
 */
+#divPrincipal {
+    padding: 20px;
+    background-color: #87ABC2;
+    font-size: 20px;
+    color: white;
+}
+
+#divServicios {
+    padding: 20px;
+    background-color: #D5EBF0;
+    font-size: 18px;
+    color: #3A3636;
+}
+
+#divUbicaciones {
+    padding: 20px;
+    background-color: #D5EBF0;
+    font-size: 18px;
+    color: #3A3636;
+}
+
+#divUbicaciones {
+    padding: 20px;
+    background-color: #D5EBF0;
+    font-size: 18px;
+    color: #3A3636;
+}
+
+#divNosotros {
+    padding: 20px;
+    background-color: #D5EBF0;
+    font-size: 18px;
+    color: #3A3636;
+}
+
+#divDoctores{
+    padding: 20px;
+    background-color: #D5EBF0;
+    font-size: 18px;
+    color: #3A3636;
+    display: grid;
+    place-items: center;
+}
+
+#divContacto{
+    padding: 20px;
+    background-color: #D5EBF0;
+    font-size: 18px;
+    color: #3A3636;
+    display: grid;
+    place-items: center;
+}
+
+/* Formato de titulos y subtitulos centrados */
 .h1Principal {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 10px;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .h2Secundario {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 10px;
     font-size: 35px;
     text-align: center;
 }
@@ -132,13 +139,13 @@ Formato de botones:
 - Tamaño de fuente
 */
 button {
-    background-color: #1DD2FF;
+    background-color: #223635;
+    color: white;
     border: none;
     padding: 18px 30px 18px 30px;
     border-radius: 25px;
     font-weight: bold;
-    margin-top: 15px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*
@@ -150,22 +157,10 @@ Imágenes:
 - Alineación a la derecha o izquierda de las imágenes
 - Margen exterior derecho e izquierdo de las imágenes
 */
-.imgPrincipal {
+#imgInicio {
     height: 400px;
     width: 350px;
     border-radius: 25px;
-    float: right;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.imgSecundaria {
-    height: 400px;
-    width: 350px;
-    border-radius: 25px;
-    float: left;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 /* Imágenes para la sección de Doctores */
@@ -173,22 +168,22 @@ Imágenes:
     height: 300px;
     width: 200px;
     border-radius: 45px;
-    margin: 20px;
 }
 
 /* Nombre del Doctor en la sección de Doctores */
 .nomDoc {
     text-align: center;
     font-size: 22px;
-    margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
 
 
+/*La siguiente media query alinea los divs al centro en dimensiones pequeñas*/
+@media(max-width: 767px){
+    div{
+       display: grid;
+       place-items: center;
+    }
 
-
-
-
-
-
+}

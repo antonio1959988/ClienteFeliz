@@ -1,0 +1,96 @@
+
+/*Formato general*/
+body{
+    background-color: #265A73;
+}
+
+p{
+    text-align: left;
+}
+
+/* SECCIONES PAGINA SERVICIOS*/
+/* Sección principal */
+#divPrincipal{
+    padding: 30px;
+    background-color: #87ABC2;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Sección Servicios */
+#divSecundario{
+    padding: 30px;
+    background-color: #D5EBF0;
+    font-size: 18px;
+    color: #3A3636;
+    text-align:center;
+}
+
+/* Ultima Sección Cita */
+#divCita{
+    padding: 30px;
+    background-color: white;
+    font-size: 18px;
+    color: #3A3636;
+    text-align:center;
+}
+
+/* Imagenes de servicios que ofrecemos */
+#imgInicio {
+    height: 450px;
+    width: 600px;
+    border-radius: 25px;
+}
+
+#imgServicios {
+    height: 220px;
+    width: 350px;
+    border-radius: 25px;
+}
+
+/* TITULOS */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/* Boton agendar */
+button {
+    background-color: #223635;
+    color: white;
+    border: none;
+    padding: 18px 30px 18px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* QUery para modificar la alineación de los objetos en tamaño ppequeño */
+@media(max-width: 992px){
+    #imgInicio {
+        display: none;
+    }
+}
